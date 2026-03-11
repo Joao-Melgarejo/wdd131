@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 | Temple Album</title>
+  <meta name="description" content="WDD 131 Week 02 Temple Album page with responsive layout, hamburger navigation, and temple images.">
+  <meta name="author" content="Joao Melgarejo">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <span id="site-name">Temple Album</span>
+      <button id="menu-button" aria-label="Open navigation menu"></button>
+    </div>
+
+    <nav id="nav-menu" class="navigation">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <div class="gallery">
+      <figure>
+        <img src="images/temple1.webp" alt="Temple exterior view 1" loading="lazy" width="400" height="250">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple2.webp" alt="Temple exterior view 2" loading="lazy" width="400" height="250">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple3.webp" alt="Temple exterior view 3" loading="lazy" width="400" height="250">
+        <figcaption>Arequipa Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple4.webp" alt="Temple exterior view 4" loading="lazy" width="400" height="250">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple5.webp" alt="Temple exterior view 5" loading="lazy" width="400" height="250">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple6.webp" alt="Temple exterior view 6" loading="lazy" width="400" height="250">
+        <figcaption>Mexico City Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple7.webp" alt="Temple exterior view 7" loading="lazy" width="400" height="250">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple8.webp" alt="Temple exterior view 8" loading="lazy" width="400" height="250">
+        <figcaption>Bogotá Colombia Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple9.webp" alt="Temple exterior view 9" loading="lazy" width="400" height="250">
+        <figcaption>São Paulo Brazil Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Joao Melgarejo | Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

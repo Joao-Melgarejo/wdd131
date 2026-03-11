@@ -1,0 +1,20 @@
+@media screen and (min-width: 700px) {
+  #menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation a {
+    flex: 1 1 auto;
+    border-top: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
