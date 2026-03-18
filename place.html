@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huaraz, Peru</title>
+  <meta name="description" content="A responsive place page about Huaraz, Peru.">
+  <meta name="author" content="Joao Melgarejo">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Huaraz, Peru</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+        <img
+          src="images/hero-small.webp"
+          alt="A scenic view of Huaraz, Peru"
+          width="500"
+          height="250"
+        >
+      </picture>
+    </section>
+
+    <section class="card data">
+      <h2>Data</h2>
+      <div class="card-content">
+        <p><span class="label">Country:</span> Peru</p>
+        <p><span class="label">Region:</span> Ancash</p>
+        <p><span class="label">Elevation:</span> 3,052 m</p>
+        <p><span class="label">Population:</span> 120,000+</p>
+        <p><span class="label">Language:</span> Spanish</p>
+        <p><span class="label">Currency:</span> Sol (PEN)</p>
+        <p><span class="label">Time Zone:</span> UTC-5</p>
+      </div>
+    </section>
+
+    <section class="card weather">
+      <h2>Weather</h2>
+
+      <img
+        class="weather-icon"
+        src="images/weather.svg"
+        alt="Partly cloudy weather icon"
+        width="80"
+        height="80"
+      >
+
+      <div class="card-content">
+        <p><span class="label">Temperature:</span> <span id="temperature">8</span> °C</p>
+        <p><span class="label">Conditions:</span> Partly Cloudy</p>
+        <p><span class="label">Wind:</span> <span id="wind-speed">12</span> km/h</p>
+        <p><span class="label">Wind Chill:</span> <span id="windchill"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> / Joao Melgarejo / Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
