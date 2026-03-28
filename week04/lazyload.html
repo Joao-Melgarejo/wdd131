@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lazy loading images activity for WDD 131">
+  <meta name="author" content="Joao Melgarejo">
+  <title>Lazy Loading | WDD 131</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Lazy Loading Example</h1>
+  </header>
+
+  <main>
+    <picture>
+      <img src="images/photo1.webp" alt="Mountain landscape" width="400" height="600" loading="lazy">
+    </picture>
+
+    <picture>
+      <img src="images/photo2.webp" alt="Lake with reflections" width="400" height="600" loading="lazy">
+    </picture>
+
+    <picture>
+      <img src="images/photo3.webp" alt="Forest path" width="400" height="600" loading="lazy">
+    </picture>
+
+    <picture>
+      <img src="images/photo4.webp" alt="City skyline" width="400" height="600" loading="lazy">
+    </picture>
+
+    <picture>
+      <img src="images/photo5.webp" alt="Beach at sunset" width="400" height="600" loading="lazy">
+    </picture>
+
+    <picture>
+      <img src="images/photo6.webp" alt="Desert dunes" width="400" height="600" loading="lazy">
+    </picture>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Joao Melgarejo | Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

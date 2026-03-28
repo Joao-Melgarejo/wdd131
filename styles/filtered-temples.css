@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #1f3a5f;
+    --secondary-color: #2e5b88;
+    --accent-color: #d9e8f5;
+    --background-color: #f5f8fc;
+    --surface-color: #ffffff;
+    --text-color: #1f1f1f;
+    --light-text: #ffffff;
+    --highlight-color: #ffd166;
+    --shadow-color: rgba(0, 0, 0, 0.12);
+    --border-color: #d5dde7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#site-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    font-size: 1.8rem;
+    border: none;
+    background: transparent;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button.open::before {
+    content: "✕";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: var(--light-text);
+    color: var(--primary-color);
+}
+
+.navigation a.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+
+main h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.temple-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.temple-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.temple-card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.temple-card-content p {
+    margin: 0.35rem 0;
+    font-size: 0.95rem;
+}
+
+.temple-card-content span {
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+#lastModified {
+    color: var(--highlight-color);
+}
