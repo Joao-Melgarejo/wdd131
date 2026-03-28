@@ -149,7 +149,7 @@ function setActiveLink(selectedLink) {
 
 document.querySelector('#home').addEventListener('click', (event) => {
     event.preventDefault();
-    pageTitle.textContent = "Home";
+    pageTitle.textContent = "Temple Album";
     setActiveLink(event.target);
     displayTemples(temples);
 });
