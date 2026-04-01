@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #3a0f5c;
+    --secondary-color: #ece7f1;
+    --accent-color: #6d2e8c;
+    --text-color: #1f1f1f;
+    --background-color: #f7f5fa;
+    --white: #ffffff;
+    --border-color: #cfc6d8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.review-form,
+.confirmation-card {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-group,
+fieldset {
+    margin-bottom: 1.25rem;
+}
+
+label,
+legend {
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--white);
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.hint {
+    margin: 0.25rem 0 0.75rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.rating-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.rating-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+}
+
+.rating-group input {
+    width: auto;
+    margin: 0 auto;
+}
+
+.checkbox-group {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 400;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin: 0;
+}
+
+input[type="submit"],
+.back-link {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+.back-link:hover {
+    background-color: var(--accent-color);
+}
+
+.confirmation-card {
+    text-align: center;
+}
+
+.back-link {
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+@media (min-width: 700px) {
+
+    .review-form,
+    .confirmation-card {
+        padding: 2rem;
+    }
+}
