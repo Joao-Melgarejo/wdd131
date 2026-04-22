@@ -1,61 +1,57 @@
 const services = [
     {
         id: 1,
-        name: "Limpieza de tanques",
-        category: "mantenimiento",
-        categoryLabel: "Mantenimiento",
+        name: "Tank Cleaning Service",
+        category: "maintenance",
         image: "images/service-1.webp",
-        alt: "Servicio de limpieza de tanques",
-        shortDescription: "Limpieza y mantenimiento de tanques de agua para conservar el sistema en mejores condiciones.",
-        details: "Este servicio ayuda a retirar suciedad, sedimentos y residuos para mejorar el estado del sistema de almacenamiento de agua."
+        alt: "Tank cleaning service",
+        shortDescription: "Cleaning and maintenance for water tanks to keep the system in better condition.",
+        details: "This service helps remove dirt and improve the condition of the water tank system."
     },
     {
         id: 2,
-        name: "Detección de fugas de agua",
-        category: "reparacion",
-        categoryLabel: "Reparación",
+        name: "Water Leak Detection",
+        category: "repair",
         image: "images/service-2.webp",
-        alt: "Servicio de detección de fugas de agua",
-        shortDescription: "Ubicación de fugas ocultas para reducir pérdidas de agua y proteger la propiedad.",
-        details: "Permite detectar fugas antes de que provoquen daños mayores en pisos, paredes o instalaciones sanitarias."
+        alt: "Water leak detection service",
+        shortDescription: "Detection of hidden leaks to reduce water loss and protect the property.",
+        details: "This service helps find hidden leaks before they create bigger structural problems."
     },
     {
         id: 3,
-        name: "Instalación y reparación de grifos",
-        category: "reparacion",
-        categoryLabel: "Reparación",
+        name: "Faucet Installation and Repair",
+        category: "repair",
         image: "images/service-3.webp",
-        alt: "Instalación y reparación de grifos",
-        shortDescription: "Instalación, cambio y reparación de grifos en cocinas, baños y otros ambientes.",
-        details: "Incluye ajuste, reemplazo e instalación de piezas para que el sistema funcione correctamente en hogares y negocios."
+        alt: "Faucet installation and repair",
+        shortDescription: "Installation, repair, and replacement of faucet systems in kitchens and bathrooms.",
+        details: "This service includes faucet repair, adjustment, and installation for homes and businesses."
     },
     {
         id: 4,
-        name: "Instalación de sistema de ducha",
-        category: "instalacion",
-        categoryLabel: "Instalación",
+        name: "Shower System Installation",
+        category: "installation",
         image: "images/service-4.webp",
-        alt: "Instalación de sistema de ducha",
-        shortDescription: "Montaje e instalación de sistemas de ducha con un acabado limpio y funcional.",
-        details: "Este servicio contempla la instalación y conexión de piezas necesarias para un uso seguro y diario."
+        alt: "Shower system installation",
+        shortDescription: "Assembly and installation of shower systems with careful finishing work.",
+        details: "This service includes installation and connection of shower system parts for daily use."
     }
 ];
 
 const testimonials = [
     {
         name: "María Torres",
-        role: "Encargada de restaurante",
-        message: "El servicio fue claro y rápido. Fernando explicó el problema y lo solucionó el mismo día."
+        role: "Restaurant manager",
+        message: "The service was clear and fast. Fernando explained the problem and solved it the same day."
     },
     {
         name: "Carlos Rojas",
-        role: "Propietario de vivienda",
-        message: "Tuvimos una fuga de agua en casa y el trabajo fue muy profesional. Quedé satisfecho con el resultado."
+        role: "Home owner",
+        message: "We had a water leak at home and the work was very professional. I was happy with the result."
     },
     {
         name: "Ana Paredes",
-        role: "Cliente de negocio local",
-        message: "Buena comunicación, puntualidad y una forma de trabajar bastante seria. Recomiendo el servicio."
+        role: "Local business client",
+        message: "Good communication, punctual attention, and a serious way of working. I recommend the service."
     }
 ];
 
@@ -68,7 +64,7 @@ function setFooterInfo() {
     }
 
     if (modifiedElement) {
-        modifiedElement.textContent = `Última modificación: ${document.lastModified}`;
+        modifiedElement.textContent = `Last Modified: ${document.lastModified}`;
     }
 }
 
@@ -94,14 +90,15 @@ function updateVisitorMessage() {
     localStorage.setItem("visitCount", visitCount);
 
     if (visitCount === 1) {
-        messageElement.textContent = "Bienvenido, esta es tu primera visita.";
+        messageElement.textContent = `Welcome — this is your first visit.`;
     } else if (visitCount === 2) {
-        messageElement.textContent = "Qué bueno verte de nuevo. Esta es tu segunda visita.";
+        messageElement.textContent = `Nice to see you again. This is your second visit.`;
     } else {
-        messageElement.textContent = `Bienvenido nuevamente. Has visitado este sitio ${visitCount} veces.`;
+        messageElement.textContent = `Welcome back. You have visited this website ${visitCount} times.`;
     }
 }
 
+/* Alternating split layout for home page featured services */
 function createServiceFeature(service) {
     return `
     <article class="service-feature">
@@ -109,7 +106,7 @@ function createServiceFeature(service) {
         <img src="${service.image}" alt="${service.alt}" loading="lazy" width="1024" height="1024">
       </div>
       <div class="service-feature-text">
-        <span class="service-feature-tag">${service.categoryLabel}</span>
+        <span class="service-feature-tag">${service.category}</span>
         <h3>${service.name}</h3>
         <p>${service.shortDescription}</p>
         <p>${service.details}</p>
@@ -118,12 +115,13 @@ function createServiceFeature(service) {
   `;
 }
 
+/* Compact horizontal card for services page grid */
 function createServiceCard(service) {
     return `
     <article class="service-card">
       <img src="${service.image}" alt="${service.alt}" loading="lazy" width="1024" height="1024">
       <div class="service-card-content">
-        <span class="service-tag">${service.categoryLabel}</span>
+        <span class="service-tag">${service.category}</span>
         <h3>${service.name}</h3>
         <p>${service.shortDescription}</p>
         <p>${service.details}</p>
@@ -174,6 +172,7 @@ function setupServiceFilters() {
     renderAllServices(savedFilter);
 }
 
+/* Primary (large, dark) + secondary (side cards) layout */
 function renderTestimonials() {
     const container = document.querySelector("#testimonialsContainer");
     if (!container) return;
@@ -222,7 +221,7 @@ function showSavedName() {
 
     const savedName = localStorage.getItem("clientName");
     if (savedName) {
-        messageElement.textContent = `Hola, ${savedName}. Puedes actualizar tu solicitud aquí.`;
+        messageElement.textContent = `Welcome back, ${savedName}. You can update your request below.`;
     }
 }
 
@@ -252,7 +251,7 @@ function handleContactForm() {
 
         if (!fullName || !phone || !area || !service || !urgency || !message) {
             responseBox.className = "form-response error";
-            responseBox.textContent = "Por favor, completa todos los campos antes de enviar el formulario.";
+            responseBox.textContent = "Please complete all fields before sending the form.";
             return;
         }
 
@@ -260,11 +259,11 @@ function handleContactForm() {
         localStorage.setItem("lastRequestedService", service);
 
         const urgencyMessage = urgency === "urgent"
-            ? "Entendemos que se trata de una solicitud urgente."
-            : "Tu solicitud fue registrada como servicio regular.";
+            ? "We understand this is an urgent request."
+            : "Your request has been saved as a regular service.";
 
         responseBox.className = "form-response success";
-        responseBox.innerHTML = `Gracias, ${fullName}. Tu solicitud para <strong>${service}</strong> en ${area} fue registrada correctamente. ${urgencyMessage}`;
+        responseBox.innerHTML = `Thank you, ${fullName}. Your request for <strong>${service}</strong> in ${area} has been saved. ${urgencyMessage}`;
 
         form.reset();
     });
