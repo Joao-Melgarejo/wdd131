@@ -545,81 +545,76 @@ ul, ol { margin: 0; }
     margin-top: 0.2rem;
 }
 
-/* === FEATURED SERVICES (home — alternating) =========== */
+/* === FEATURED SERVICES (home — flexible cards grid) === */
 .featured-services {
-    display: flex;
-    flex-direction: column;
-    border: 1.5px solid var(--border);
-    overflow: hidden;
-    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .service-feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 280px;
+    background: var(--white);
+    border-radius: 8px;
     overflow: hidden;
+    border: 1.5px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.service-feature:not(:last-child) {
-    border-bottom: 1.5px solid var(--border);
+.service-feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(29, 53, 87, 0.12);
 }
-
-.service-feature:nth-child(even) .service-feature-img { order: 2; }
-.service-feature:nth-child(even) .service-feature-text { order: 1; }
 
 .service-feature-img { 
+    width: 100%;
     overflow: hidden;
-    max-height: 320px;
+    background: var(--soft);
 }
 
 .service-feature-img img {
     width: 100%;
-    height: 100%;
-    max-height: 320px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    transition: transform 0.7s ease;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .service-feature:hover .service-feature-img img {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 .service-feature-text {
+    padding: 1.75rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2rem 2.5rem;
-    background: var(--white);
-}
-
-.service-feature:nth-child(even) .service-feature-text {
-    background: var(--warm-white);
 }
 
 .service-feature-tag {
     display: inline-block;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--red);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.65rem;
 }
 
 .service-feature-text h3 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.55rem;
+    font-size: 1.35rem;
     color: var(--ink);
-    margin: 0 0 0.85rem;
-    line-height: 1.2;
+    margin: 0 0 0.75rem;
+    line-height: 1.25;
 }
 
 .service-feature-text p {
     color: var(--muted);
     margin: 0;
-    line-height: 1.7;
-    font-size: 0.97rem;
+    line-height: 1.65;
+    font-size: 0.92rem;
 }
 
 .service-feature-text p + p {
@@ -1346,12 +1341,10 @@ textarea { resize: vertical; }
     .services-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 
-    .service-feature { grid-template-columns: 1fr; min-height: auto; }
-    .service-feature:nth-child(even) .service-feature-img { order: 0; }
-    .service-feature:nth-child(even) .service-feature-text { order: 1; }
-    .service-feature-img { height: 240px; max-height: 240px; }
-    .service-feature-img img { height: 240px; max-height: 240px; }
-    .service-feature-text { padding: 2rem 1.75rem; }
+    .featured-services { grid-template-columns: 1fr; }
+    .service-feature { 
+        /* Cards mantienen su estructura vertical */
+    }
 
     .hero-stat { padding-right: 1.5rem; margin-right: 1.5rem; }
 
