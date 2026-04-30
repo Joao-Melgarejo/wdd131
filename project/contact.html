@@ -4,56 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Master Gasfitería | Contacto</title>
-    <meta name="description"
-        content="Contacta a The Master Gasfitería para trabajos de gasfitería, atención de emergencias y servicio en Nuevo Chimbote, Chimbote, Casma, Santa y zonas cercanas.">
+    <title>Contacto | The Master Gasfitería</title>
+    <meta name="description" content="Contacta a The Master Gasfitería por WhatsApp o llamada para emergencias, cotizaciones y servicios en Nuevo Chimbote, Chimbote, Casma y Santa.">
     <meta name="author" content="Joao Melgarejo">
+    <meta name="theme-color" content="#06111f">
+    <meta property="og:title" content="Contacto | The Master Gasfitería">
+    <meta property="og:description" content="Solicita atención rápida para fugas, obstrucciones, tanques, grifería e instalaciones sanitarias.">
+    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#mainContent">Saltar al contenido principal</a>
 
-    <header class="site-header">
+    <header class="site-header" data-header>
         <div class="container nav-wrapper">
-            <a href="index.html" class="brand">
+            <a href="index.html" class="brand" aria-label="The Master Gasfitería - Inicio">
                 <img src="images/logo.png" alt="Logo de The Master Gasfitería" class="brand-logo">
                 <div class="brand-text">
                     <span class="brand-name">The Master</span>
-                    <span class="brand-subtitle">Gasfitería de Fernando</span>
+                    <span class="brand-subtitle">Gasfitería profesional</span>
                 </div>
             </a>
+
             <button id="menuButton" class="menu-button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
-            <nav id="mainNav" class="main-nav">
+
+            <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
                 <a href="index.html">Inicio</a>
                 <a href="services.html">Servicios</a>
                 <a href="contact.html" class="active">Contacto</a>
-                <a href="references.html">Referencias</a>
+                <a class="nav-cta" href="tel:+51936872862">Llamar ahora</a>
             </nav>
         </div>
     </header>
 
-    <main>
-
-        <section class="page-banner">
-            <div class="container">
-                <p class="eyebrow">Escríbenos</p>
-                <h1>Contacto</h1>
-                <p>Completa tus datos y guardaremos tu solicitud de servicio en esta página.</p>
+    <main id="mainContent">
+        <section class="page-banner page-banner-premium contact-hero">
+            <div class="container page-banner-grid">
+                <div>
+                    <p class="eyebrow">Contacto directo</p>
+                    <h1>Cuéntanos el problema y recibe una respuesta más rápida por WhatsApp.</h1>
+                    <p>Para emergencias, lo más eficiente es escribir o llamar. El formulario prepara un mensaje listo para enviar con los datos clave.</p>
+                    <div class="hero-actions contact-actions-top">
+                        <a class="btn btn-primary" href="https://wa.me/51936872862?text=Hola%20The%20Master%20Gasfiter%C3%ADa%2C%20necesito%20ayuda%20con%20un%20servicio." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+                        <a class="btn btn-ghost" href="tel:+51936872862">Llamar +51 936 872 862</a>
+                    </div>
+                </div>
+                <aside class="page-summary-card contact-summary-card">
+                    <span class="status-dot"></span>
+                    <strong>Datos para coordinar mejor</strong>
+                    <p>Nombre, zona, tipo de servicio, nivel de urgencia y una descripción breve del problema.</p>
+                    <small>También puedes enviar fotos o videos por WhatsApp.</small>
+                </aside>
             </div>
         </section>
 
-        <section class="section section-alt">
+        <section class="section section-light">
             <div class="container contact-layout">
-
-                <!-- Información del negocio -->
-                <div class="contact-info-block">
-                    <h2 class="contact-info-headline">Información<br>del negocio</h2>
+                <aside class="contact-info-block premium-contact-card">
+                    <p class="eyebrow">Atención local</p>
+                    <h2 class="contact-info-headline">Información del negocio</h2>
 
                     <div class="contact-detail">
                         <div class="contact-detail-item">
@@ -61,14 +77,12 @@
                             <span class="contact-detail-value">The Master Gasfitería</span>
                         </div>
                         <div class="contact-detail-item">
-                            <span class="contact-detail-label">Propietario</span>
+                            <span class="contact-detail-label">Especialista</span>
                             <span class="contact-detail-value">Fernando</span>
                         </div>
                         <div class="contact-detail-item">
                             <span class="contact-detail-label">Teléfono</span>
-                            <span class="contact-detail-value">
-                                <a href="tel:+51936872862">+51 936 872 862</a>
-                            </span>
+                            <span class="contact-detail-value"><a href="tel:+51936872862">+51 936 872 862</a></span>
                         </div>
                         <div class="contact-detail-item">
                             <span class="contact-detail-label">Zona</span>
@@ -80,88 +94,107 @@
                         </div>
                         <div class="contact-detail-item">
                             <span class="contact-detail-label">Emergencias</span>
-                            <span class="contact-detail-value">24 horas, lunes a sábado</span>
+                            <span class="contact-detail-value">Lunes a sábado, según disponibilidad</span>
                         </div>
                     </div>
 
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1rem; margin: 0 0 0.85rem; color: var(--ink);">¿Por qué elegirnos?</h3>
-                    <ul class="why-list">
-                        <li>15 años de experiencia en campo</li>
-                        <li>Atención a hogares y negocios</li>
-                        <li>Comunicación clara en cada paso</li>
-                        <li>Soporte de emergencia para casos urgentes</li>
+                    <ul class="why-list premium-list">
+                        <li>Respuesta más rápida si indicas tu zona exacta.</li>
+                        <li>Fotos o videos ayudan a orientar el diagnóstico.</li>
+                        <li>Se puede coordinar atención para vivienda o negocio.</li>
                     </ul>
-                </div>
+                </aside>
 
-                <!-- Formulario -->
-                <div class="form-panel">
-                    <h2>Formulario de solicitud</h2>
+                <section class="form-panel premium-form-panel" aria-labelledby="contactFormTitle">
+                    <p class="eyebrow">Solicitud guiada</p>
+                    <h2 id="contactFormTitle">Prepara tu mensaje de servicio</h2>
+                    <p class="form-intro">Completa los datos y el sitio generará un mensaje listo para enviar por WhatsApp. Así el contacto sí funciona en un proyecto sin backend.</p>
                     <span id="savedNameMessage" class="saved-name"></span>
 
                     <form id="contactForm" class="contact-form" novalidate>
                         <div class="form-group">
-                            <label for="fullName">Nombre completo *</label>
-                            <input type="text" id="fullName" name="fullName" required>
+                            <label for="fullName">Nombre completo</label>
+                            <input type="text" id="fullName" name="fullName" autocomplete="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Número de teléfono *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Ejemplo: 936 872 862" required>
                         </div>
                         <div class="form-group">
-                            <label for="area">Zona / Distrito *</label>
+                            <label for="area">Zona o distrito</label>
                             <input type="text" id="area" name="area" placeholder="Ejemplo: Nuevo Chimbote" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Servicio requerido *</label>
+                            <label for="service">Servicio requerido</label>
                             <select id="service" name="service" required>
-                                <option value="">Selecciona un servicio</option>
+                                <option value="">Selecciona una opción</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="urgency">Nivel de urgencia *</label>
+                            <label for="urgency">Nivel de urgencia</label>
                             <select id="urgency" name="urgency" required>
                                 <option value="">Selecciona una opción</option>
-                                <option value="regular">Servicio regular</option>
-                                <option value="urgente">Servicio urgente</option>
+                                <option value="Emergencia hoy">Emergencia hoy</option>
+                                <option value="Esta semana">Esta semana</option>
+                                <option value="Cotización programada">Cotización programada</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Descripción del problema *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="form-group full-width">
+                            <label for="message">Describe el problema</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Ejemplo: fuga debajo del lavadero, baja presión, humedad en pared..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary form-submit">Enviar solicitud</button>
+                        <button type="submit" class="btn btn-primary form-submit">Preparar mensaje de WhatsApp</button>
                     </form>
 
                     <div id="formResponse" class="form-response" aria-live="polite"></div>
-                </div>
-
+                </section>
             </div>
         </section>
 
+        <section class="section section-dark">
+            <div class="container info-grid">
+                <article class="info-card dark-info-card">
+                    <h3>Para emergencias</h3>
+                    <p>Llama o escribe por WhatsApp. Describe si hay fuga activa, humedad, olor, obstrucción o pérdida de presión.</p>
+                </article>
+                <article class="info-card dark-info-card">
+                    <h3>Para cotizaciones</h3>
+                    <p>Indica medidas, fotos, ubicación y el tipo de instalación o mantenimiento que necesitas.</p>
+                </article>
+                <article class="info-card dark-info-card">
+                    <h3>Para negocios</h3>
+                    <p>Coordina horarios con menor movimiento para evitar interrupciones en tu operación.</p>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <a class="floating-whatsapp" href="https://wa.me/51936872862?text=Hola%20The%20Master%20Gasfiter%C3%ADa%2C%20necesito%20un%20servicio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
 
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
                 <h3>The Master Gasfitería</h3>
-                <p class="footer-tagline">Servicio rápido y confiable para clientes locales en Nuevo Chimbote y la zona.</p>
+                <p class="footer-tagline">Gasfitería profesional para hogares y negocios en Nuevo Chimbote, Chimbote, Casma, Santa y zonas cercanas.</p>
             </div>
             <div>
                 <h3>Contacto</h3>
                 <p><a href="tel:+51936872862">+51 936 872 862</a></p>
-                <p>Atención de emergencias disponible.</p>
+                <p><a href="https://wa.me/51936872862" target="_blank" rel="noopener">WhatsApp directo</a></p>
             </div>
             <div>
-                <h3>Páginas</h3>
+                <h3>Navegación</h3>
+                <p><a href="index.html">Inicio</a></p>
                 <p><a href="services.html">Servicios</a></p>
+                <p><a href="contact.html">Contacto</a></p>
                 <p><a href="references.html">Referencias</a></p>
             </div>
         </div>
         <div class="container footer-bottom">
-            <p><span id="currentYear"></span> · Joao Melgarejo · WDD 131 Proyecto</p>
-            <p id="lastModified"></p>
+            <p>© <span id="currentYear"></span> The Master Gasfitería. Todos los derechos reservados.</p>
+            <p>Diseño web por Joao Melgarejo</p>
         </div>
     </footer>
-
 </body>
+
 </html>
