@@ -1,211 +1,283 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Master Gasfitería | Gasfitero profesional en Nuevo Chimbote</title>
-    <meta name="description" content="Gasfitería profesional para hogares y negocios en Nuevo Chimbote, Chimbote, Casma y Santa. Fugas, tanques, grifos, duchas y emergencias con atención rápida.">
+    <title>The Master Gasfitería | Home</title>
+    <meta name="description"
+        content="The Master Gasfitería offers plumbing services, leak detection, tank cleaning, faucet repair, and shower system installation in Nuevo Chimbote and nearby areas.">
     <meta name="author" content="Joao Melgarejo">
-    <meta name="theme-color" content="#06111f">
-    <meta property="og:title" content="The Master Gasfitería | Servicio local premium">
-    <meta property="og:description" content="Soluciones rápidas y profesionales para fugas, instalaciones y mantenimiento sanitario en la región de Chimbote.">
-    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
-    <a class="skip-link" href="#mainContent">Saltar al contenido principal</a>
 
-    <header class="site-header" data-header>
+    <!-- ================================================
+         HEADER
+    ================================================= -->
+    <header class="site-header">
         <div class="container nav-wrapper">
-            <a href="index.html" class="brand" aria-label="The Master Gasfitería - Inicio">
-                <img src="images/logo.png" alt="Logo de The Master Gasfitería" class="brand-logo">
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="The Master Gasfitería logo" class="brand-logo">
                 <div class="brand-text">
                     <span class="brand-name">The Master</span>
-                    <span class="brand-subtitle">Gasfitería profesional</span>
+                    <span class="brand-subtitle">Gasfitería de Fernando</span>
                 </div>
             </a>
 
-            <button id="menuButton" class="menu-button" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+            <button id="menuButton" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
 
-            <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="services.html">Servicios</a>
-                <a href="contact.html">Contacto</a>
-                <a class="nav-cta" href="tel:+51936872862">Llamar ahora</a>
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="references.html">References</a>
             </nav>
         </div>
     </header>
 
-    <main id="mainContent">
-        <section class="hero hero-premium">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="hero-eyebrow"><span></span>Atención local desde 2009</p>
-                    <h1>Gasfitería rápida, limpia y profesional para hogares y negocios.</h1>
-                    <p class="hero-tagline">Resolvemos fugas, obstrucciones, grifos, duchas y mantenimiento de tanques en Nuevo Chimbote, Chimbote, Casma, Santa y zonas cercanas.</p>
+    <main>
+
+        <!-- ============================================
+             HERO — Full bleed, editorial, stat strip
+        ============================================= -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <p class="hero-eyebrow">Trusted since 2009</p>
+                    <h1>"The Master"<br>Gasfitería</h1>
+                    <p class="hero-tagline">
+                        Fast, reliable plumbing for homes and businesses across Nuevo Chimbote and the surrounding region.
+                    </p>
+                    <p id="visitorMessage" class="visitor-message"></p>
 
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="https://wa.me/51936872862?text=Hola%20The%20Master%20Gasfiter%C3%ADa%2C%20necesito%20cotizar%20un%20servicio." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-                        <a class="btn btn-ghost" href="tel:+51936872862">Llamar +51 936 872 862</a>
+                        <a class="btn btn-primary" href="contact.html">Request a service</a>
+                        <a class="btn btn-outline" href="services.html">See our work</a>
                     </div>
 
-                    <div class="trust-pills" aria-label="Indicadores de confianza">
-                        <span>15+ años de experiencia</span>
-                        <span>Emergencias Lun-Sáb</span>
-                        <span>Hogares y negocios</span>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">15+</span>
+                            <span class="hero-stat-label">Years of experience</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">24h</span>
+                            <span class="hero-stat-label">Emergency support</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">5</span>
+                            <span class="hero-stat-label">Areas served</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">4</span>
+                            <span class="hero-stat-label">Core services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             TRUST STRIP — Inline, no boxes
+        ============================================= -->
+        <div class="trust-strip">
+            <div class="trust-strip-inner">
+                <div class="trust-item">
+                    <span class="trust-dot"></span>
+                    Homes &amp; businesses
+                </div>
+                <div class="trust-item">
+                    <span class="trust-dot"></span>
+                    Emergency: Mon – Sat
+                </div>
+                <div class="trust-item">
+                    <span class="trust-dot"></span>
+                    Chimbote · Casma · Santa
+                </div>
+                <div class="trust-item">
+                    <span class="trust-dot"></span>
+                    +51 936 872 862
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================
+             ABOUT — Asymmetric image + text composition
+        ============================================= -->
+        <section class="section section-alt">
+            <div class="container about-layout">
+
+                <div class="about-text-side">
+                    <p class="about-kicker">About the business</p>
+                    <h2 class="about-headline">Local craft,<br>real results</h2>
+                    <p class="about-body">
+                        The Master Gasfitería is a family business led by Fernando — a plumber with over fifteen years
+                        working across homes, restaurants, clinics, factories, and offices throughout the Chimbote region.
+                        Every job is handled with care, clear communication, and a focus on long-term results.
+                    </p>
+                    <p class="about-body">
+                        We have worked in financial offices, automotive businesses, industrial plants, and even boat bathroom
+                        installations. No project is too specific, and no client is left without an explanation of what was found
+                        and what was done.
+                    </p>
+                    <blockquote class="about-quote">
+                        "Professional solutions for water systems, leaks, and sanitary installations."
+                    </blockquote>
+
+                    <div class="about-trust-row">
+                        <div class="about-trust-item">
+                            <span class="about-trust-number">15+</span>
+                            <span class="about-trust-label">Years active</span>
+                        </div>
+                        <div class="about-trust-item">
+                            <span class="about-trust-number">24h</span>
+                            <span class="about-trust-label">Emergency line</span>
+                        </div>
+                        <div class="about-trust-item">
+                            <span class="about-trust-number">4</span>
+                            <span class="about-trust-label">Service types</span>
+                        </div>
+                        <div class="about-trust-item">
+                            <span class="about-trust-number">5</span>
+                            <span class="about-trust-label">Areas covered</span>
+                        </div>
                     </div>
                 </div>
 
-                <aside class="hero-card" aria-label="Resumen de servicio">
-                    <div class="hero-card-glow"></div>
-                    <div class="availability-card">
-                        <span class="status-dot"></span>
-                        <p>Disponible para emergencias</p>
-                        <strong>Respuesta rápida en tu zona</strong>
+                <div class="about-image-side">
+                    <img src="images/owner.webp" alt="Fernando from The Master Gasfitería" loading="lazy" width="1024" height="1024">
+                    <div class="about-image-badge">
+                        <strong>15+</strong>
+                        <span>Years of experience</span>
                     </div>
-                    <img src="images/owner.webp" alt="Fernando, especialista de The Master Gasfitería" width="900" height="1100">
-                    <div class="metric-panel">
-                        <div>
-                            <strong>24h</strong>
-                            <span>Línea de urgencia</span>
-                        </div>
-                        <div>
-                            <strong>5</strong>
-                            <span>Zonas cubiertas</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <section class="logo-strip" aria-label="Zonas de atención">
-            <div class="container logo-strip-inner">
-                <span>Nuevo Chimbote</span>
-                <span>Chimbote</span>
-                <span>Casma</span>
-                <span>Santa</span>
-                <span>Negocios locales</span>
-            </div>
-        </section>
-
-        <section class="section section-light">
-            <div class="container split-intro">
-                <div>
-                    <p class="eyebrow">Problemas que resolvemos</p>
-                    <h2>Servicio técnico con la claridad de una empresa moderna.</h2>
                 </div>
-                <p>La página ahora debe vender confianza inmediata: qué problema solucionas, qué tan rápido respondes, dónde atiendes y por qué el cliente puede confiar. Esta sección convierte servicios comunes en soluciones fáciles de entender.</p>
-            </div>
 
-            <div id="featuredServices" class="featured-services container"></div>
+            </div>
         </section>
 
-        <section class="section section-dark process-section">
+        <!-- ============================================
+             FEATURED SERVICES — Alternating split layout
+             (rendered by JS into #featuredServices)
+        ============================================= -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">What we do</p>
+                    <h2>Main services</h2>
+                    <p>Four services that represent the core of Fernando's work for local clients in the region.</p>
+                </div>
+            </div>
+
+            <div id="featuredServices" class="featured-services"></div>
+
+            <div class="container center-text">
+                <a class="btn btn-outline-dark" href="services.html">View all service details</a>
+            </div>
+        </section>
+
+        <!-- ============================================
+             HOW WE WORK — Process steps + tool images
+        ============================================= -->
+        <section class="section section-alt">
             <div class="container process-layout">
+
                 <div>
-                    <p class="eyebrow eyebrow-light">Método de trabajo</p>
-                    <h2>Una experiencia más ordenada desde el primer contacto.</h2>
-                    <p class="section-lead">Para verse premium, el servicio no solo debe sonar rápido: debe sentirse controlado, transparente y profesional.</p>
-                </div>
-
-                <ol class="steps-list">
-                    <li>
-                        <strong>Diagnóstico claro</strong>
-                        <span>Escuchamos el problema, revisamos la zona y te explicamos la causa probable.</span>
-                    </li>
-                    <li>
-                        <strong>Solución y presupuesto</strong>
-                        <span>Indicamos el trabajo recomendado antes de empezar, sin lenguaje confuso.</span>
-                    </li>
-                    <li>
-                        <strong>Ejecución limpia</strong>
-                        <span>Trabajamos con herramientas adecuadas, cuidado del espacio y enfoque en durabilidad.</span>
-                    </li>
-                    <li>
-                        <strong>Verificación final</strong>
-                        <span>Probamos el sistema y te damos recomendaciones para evitar nuevos daños.</span>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section class="section section-light proof-section">
-            <div class="container proof-grid">
-                <div class="proof-media">
-                    <img src="images/tool-1.webp" alt="Herramientas profesionales de gasfitería" width="900" height="600" loading="lazy">
-                    <img src="images/tool-2.webp" alt="Trabajo de reparación de tubería" width="700" height="500" loading="lazy">
-                </div>
-
-                <div class="proof-copy">
-                    <p class="eyebrow">Confianza local</p>
-                    <h2>Más que reparar: prevenir daños, fugas y gastos mayores.</h2>
-                    <p>El cliente de gasfitería suele llegar con urgencia. Por eso el diseño prioriza botones visibles, contacto directo, lenguaje simple y señales de seguridad.</p>
-                    <div class="proof-list">
-                        <span>Diagnóstico explicado paso a paso</span>
-                        <span>Atención para casas, restaurantes y oficinas</span>
-                        <span>Soluciones para agua, grifería, duchas y tanques</span>
+                    <div class="section-heading">
+                        <p class="eyebrow">Our process</p>
+                        <h2>How we approach every job</h2>
                     </div>
+
+                    <ol class="steps-list">
+                        <li>We listen to the problem and review the situation on site.</li>
+                        <li>We explain the best option clearly before starting any work.</li>
+                        <li>We carry out the repair or installation with attention to detail.</li>
+                        <li>We check the result and confirm everything is working correctly.</li>
+                    </ol>
                 </div>
+
+                <div class="tool-images">
+                    <img src="images/tool-1.webp" alt="Plumbing tools" loading="lazy" width="700" height="466">
+                    <img src="images/tool-2.webp" alt="Water leak in a pipe" loading="lazy" width="500" height="313">
+                </div>
+
             </div>
         </section>
 
-        <section class="section testimonials-section">
+        <!-- ============================================
+             TESTIMONIALS — Primary pull quote + secondary
+             (rendered by JS into #testimonialsContainer)
+        ============================================= -->
+        <section class="section">
             <div class="container">
                 <div class="section-heading centered">
-                    <p class="eyebrow centered-eyebrow">Reseñas</p>
-                    <h2>La confianza se gana con resultados visibles.</h2>
-                    <p>Usa testimonios breves, específicos y con contexto local. Mientras más reales parezcan, más profesional se sentirá la marca.</p>
+                    <p class="eyebrow">Client words</p>
+                    <h2>What people say</h2>
+                    <p>Short reviews that reflect the kind of service Fernando aims to give to every client.</p>
                 </div>
+
                 <div id="testimonialsContainer"></div>
             </div>
         </section>
 
+        <!-- ============================================
+             CTA — Full bleed dark, typographic
+        ============================================= -->
         <section class="cta-section">
-            <div class="container cta-card">
+            <div class="cta-bg-text">24h</div>
+            <div class="container cta-inner">
                 <div>
-                    <p class="cta-eyebrow">Atención rápida</p>
-                    <h2>¿Tienes una fuga o instalación pendiente?</h2>
-                    <p>Cuéntanos qué ocurre, envía fotos por WhatsApp y recibe orientación para coordinar el servicio.</p>
+                    <p class="cta-eyebrow">Ready to help</p>
+                    <h2>Contact The Master<br>Gasfitería today</h2>
+                    <p>Leaks, tank cleaning, faucet repair, shower installation — we handle it all across the Chimbote region.</p>
                 </div>
                 <div class="cta-actions">
-                    <a class="btn btn-primary" href="https://wa.me/51936872862?text=Hola%20Fernando%2C%20necesito%20ayuda%20con%20un%20servicio%20de%20gasfiter%C3%ADa." target="_blank" rel="noopener">Escribir por WhatsApp</a>
-                    <a class="btn btn-ghost-light" href="contact.html">Ver contacto</a>
+                    <a class="btn btn-primary" href="contact.html">Go to contact page</a>
+                    <a class="btn btn-outline" href="tel:+51936872862">Call now</a>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <a class="floating-whatsapp" href="https://wa.me/51936872862?text=Hola%20The%20Master%20Gasfiter%C3%ADa%2C%20necesito%20un%20servicio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
-
+    <!-- ================================================
+         FOOTER
+    ================================================= -->
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
                 <h3>The Master Gasfitería</h3>
-                <p class="footer-tagline">Gasfitería profesional para hogares y negocios en Nuevo Chimbote, Chimbote, Casma, Santa y zonas cercanas.</p>
+                <p class="footer-tagline">
+                    Reliable plumbing service for homes and businesses across Nuevo Chimbote, Chimbote, Casma, Santa, and nearby areas.
+                </p>
             </div>
             <div>
-                <h3>Contacto</h3>
+                <h3>Contact</h3>
                 <p><a href="tel:+51936872862">+51 936 872 862</a></p>
-                <p><a href="https://wa.me/51936872862" target="_blank" rel="noopener">WhatsApp directo</a></p>
+                <p>Regular hours: 8 a.m. – 8 p.m.</p>
+                <p>Emergency: 24h, Mon – Sat</p>
             </div>
             <div>
-                <h3>Servicios</h3>
-                <p>Fugas y reparaciones</p>
-                <p>Tanques, grifos y duchas</p>
+                <h3>Pages</h3>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact.html">Contact</a></p>
+                <p><a href="references.html">References</a></p>
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>© <span id="currentYear"></span> The Master Gasfitería. Todos los derechos reservados.</p>
-            <p>Diseñado por Joao Melgarejo</p>
+            <p><span id="currentYear"></span> · Joao Melgarejo · WDD 131 Project</p>
+            <p id="lastModified"></p>
         </div>
     </footer>
+
 </body>
 </html>
