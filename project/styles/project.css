@@ -56,6 +56,7 @@ ul, ol { margin: 0; }
 
 .nav-wrapper {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
@@ -70,13 +71,13 @@ ul, ol { margin: 0; }
 }
 
 .brand-logo {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 64px;
     object-fit: contain;
     border-radius: 10px;
     border: 1px solid var(--border);
     background: var(--warm-white);
-    padding: 0.15rem;
+    padding: 0.12rem;
 }
 
 .brand-text { display: flex; flex-direction: column; }
@@ -1277,10 +1278,25 @@ textarea { resize: vertical; }
 @media (max-width: 920px) {
     .menu-button { display: inline-block; }
 
+    .nav-wrapper {
+        padding: 0.7rem 0;
+    }
+
+    .brand {
+        min-width: 0;
+        gap: 0.7rem;
+    }
+
+    .brand-logo {
+        width: 58px;
+        height: 78px;
+        padding: 0.08rem;
+    }
+
     .main-nav {
         position: absolute;
-        top: 84px;
-        right: 4%;
+        top: calc(100% + 0.5rem);
+        right: 0;
         background: var(--white);
         border: 1px solid var(--border);
         border-radius: 10px;
@@ -1323,6 +1339,28 @@ textarea { resize: vertical; }
 }
 
 @media (max-width: 600px) {
+    .nav-wrapper {
+        gap: 0.7rem;
+    }
+
+    .brand-logo {
+        width: 56px;
+        height: 76px;
+        flex: 0 0 auto;
+    }
+
+    .brand-name {
+        font-size: 1rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .menu-button {
+        padding: 0.45rem 0.7rem;
+    }
+
     .hero { min-height: 75vh; }
     .hero h1 { font-size: 2.5rem; }
     .hero-stats { gap: 1.25rem 0; }
