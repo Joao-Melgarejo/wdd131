@@ -1,7 +1,7 @@
 /* =====================================================
-   THE MASTER GASFITERÍA — Design System
-   Aesthetic: Premium local craftsman · Editorial warmth
-   Fonts: Playfair Display (headings) · Outfit (body)
+   THE MASTER GASFITERÍA - Design System
+   Aesthetic: Premium local craftsman - Editorial warmth
+   Fonts: Playfair Display (headings) - Outfit (body)
    ===================================================== */
 
 :root {
@@ -321,6 +321,16 @@ ul, ol { margin: 0; }
     transform: translateY(-1px);
 }
 
+.btn-whatsapp {
+    background: #1f8f52;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background: #176f3f;
+    transform: translateY(-1px);
+}
+
 .btn-outline {
     border: 1.5px solid rgba(255, 255, 255, 0.4);
     color: #fff;
@@ -524,7 +534,7 @@ ul, ol { margin: 0; }
     margin-top: 0.2rem;
 }
 
-/* === FEATURED SERVICES (home — alternating) =========== */
+/* === FEATURED SERVICES (home - alternating) =========== */
 .featured-services {
     display: flex;
     flex-direction: column;
@@ -853,7 +863,7 @@ ul, ol { margin: 0; }
     font-style: italic;
 }
 
-/* === INFO GRID (services page — why us) =============== */
+/* === INFO GRID (services page - why us) =============== */
 .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
