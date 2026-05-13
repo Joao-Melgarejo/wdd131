@@ -71,13 +71,13 @@ ul, ol { margin: 0; }
 }
 
 .brand-logo {
-    width: 54px;
-    height: 74px;
+    width: 48px;
+    height: 64px;
     object-fit: contain;
     border-radius: 10px;
     border: 1px solid var(--border);
     background: var(--warm-white);
-    padding: 0.05rem;
+    padding: 0.12rem;
 }
 
 .brand-text { display: flex; flex-direction: column; }
@@ -1288,9 +1288,9 @@ textarea { resize: vertical; }
     }
 
     .brand-logo {
-        width: 72px;
-        height: 96px;
-        padding: 0;
+        width: 58px;
+        height: 78px;
+        padding: 0.08rem;
     }
 
     .main-nav {
@@ -1344,17 +1344,17 @@ textarea { resize: vertical; }
     }
 
     .brand-logo {
-        width: 72px;
-        height: 96px;
+        width: 56px;
+        height: 76px;
         flex: 0 0 auto;
     }
 
     .brand-name {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .brand-subtitle {
-        font-size: 0.72rem;
+        font-size: 0.75rem;
     }
 
     .menu-button {
