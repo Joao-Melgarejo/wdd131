@@ -1361,7 +1361,10 @@ textarea { resize: vertical; }
         padding: 0.45rem 0.7rem;
     }
 
-    .hero { min-height: 75vh; }
+    .hero {
+        min-height: 75vh;
+        background-position: 78% center;
+    }
     .hero h1 { font-size: 2.5rem; }
     .hero-stats { gap: 1.25rem 0; }
     .hero-stat { border-right: none; padding-right: 0; margin-right: 0; }
@@ -1382,4 +1385,10 @@ textarea { resize: vertical; }
     .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     .form-panel { padding: 1.5rem; }
     .about-trust-row { gap: 1.5rem; }
+}
+
+@media (max-width: 430px) {
+    .hero {
+        background-position: 86% center;
+    }
 }
